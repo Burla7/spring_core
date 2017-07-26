@@ -18,7 +18,7 @@ public class UserDaoImpl implements UserDao{
     private SqlSessionTemplate sqlSessionTemplate;
 
     public User queryById(int id) {
-        return (User) sqlSessionTemplate.selectOne("queryById", 3);
+        return (User) sqlSessionTemplate.selectOne("queryById", id);
     }
 
     public void save(User u) {

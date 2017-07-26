@@ -1,38 +1,51 @@
 package cn.qcode;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
+public class AppTest
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+    @Test
+    public void Test(){
+        /*    OutClass outerClass = new OutClass();
+            OutClass.InnerClass innerClass = outerClass.new InnerClass();
+        innerClass.display();*/
+
+
+        long s_time = System.currentTimeMillis();
+
+        String a = "a";
+        for(int i = 0 ; i < 100000 ; i++){
+            a += "b";
+        }
+        long e_time = System.currentTimeMillis();
+        System.out.println("  +   所消耗的时间：" + (e_time - s_time) + "毫秒");
+
+         s_time = System.currentTimeMillis();
+
+        StringBuffer aSb = new StringBuffer("a");
+        for(int i = 0 ; i < 100000 ; i++){
+            aSb.append("b");
+        }
+         e_time = System.currentTimeMillis();
+
+        System.out.println("  +   所消耗的时间：" + (e_time - s_time) + "毫秒");
+
+
+        s_time = System.currentTimeMillis();
+
+        String aC = "a";
+        for(int i = 0 ; i < 100000 ; i++){
+            aC = aC.concat("b");
+        }
+        e_time = System.currentTimeMillis();
+
+        System.out.println("  +   所消耗的时间：" + (e_time - s_time) + "毫秒");
+
+
+
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
 }

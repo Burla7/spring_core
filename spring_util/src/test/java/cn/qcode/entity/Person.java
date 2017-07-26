@@ -3,7 +3,7 @@ package cn.qcode.entity;
 import java.io.Serializable;
 
 /**
- * Created by Administrator on 2017/7/10.
+ * Created by 张佳琦 on 2017/7/10.
  */
 public class Person implements Cloneable,Serializable{
     /** 姓名 **/

@@ -78,7 +78,7 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
-        <!-- proxool -->
+        <!-- proxool 连接池-->
         <dependency>
             <groupId>com.cloudhopper.proxool</groupId>
             <artifactId>proxool</artifactId>
@@ -93,11 +93,34 @@
             <groupId>com.cloudhopper.proxool</groupId>
             <artifactId>proxool-cglib</artifactId>
         </dependency>
-
+        <!--上传下载-->
         <dependency>
         <groupId>commons-fileupload</groupId>
         <artifactId>commons-fileupload</artifactId>
         </dependency>
+
+        <!--jackson支持-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+
+        <!--日志-->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+        </dependency>
+
     </dependencies>
 
 

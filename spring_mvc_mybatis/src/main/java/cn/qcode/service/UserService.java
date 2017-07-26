@@ -1,39 +1,22 @@
 package cn.qcode.service;
 
-import cn.qcode.dao.UserDao;
 import cn.qcode.entity.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
- * Created by Administrator on 2017/6/16.
+ * Created by jiaqi,zhang on 2017/7/17.
  */
-@Service
-public class UserService {
 
-    @Autowired
-    private UserDao userDao;
+public interface UserService {
 
-    public User queryById(int id){
+     User queryById(int id);
+     void save(User u) throws Exception;
 
-        return userDao.queryById(id);
-    };
+     void update(User u);
 
-    public void save(User u){
-         userDao.save(u);
-    };
+     void delete(Integer id);
 
-    public void update(User u){
-        userDao.update(u);
-    };
-
-    public void delete(Integer id){
-        userDao.delete(id);
-    };
-
-    public List<User> queryAll(){
-        return  userDao.queryAll();
-    };
+     List<User> queryAll();
 }

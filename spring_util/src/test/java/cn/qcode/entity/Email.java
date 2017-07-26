@@ -3,7 +3,7 @@ package cn.qcode.entity;
 import java.io.Serializable;
 
 /**
- * Created by Administrator on 2017/7/11.
+ * Created by 张佳琦 on 2017/7/11.
  */
 
 public class  Email implements Serializable {
